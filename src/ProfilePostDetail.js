@@ -164,7 +164,7 @@ const ProfilePostDetail = (props) => {
                     </IconButton>
 
 
-                    <Grid container spacing={2} style={{ marginTop: '-50px', height: '480px' }}>
+                    <Grid container spacing={2} style={{ marginTop: '-50px', height: '480px' }}git>
                         <Grid item xs={6}>
                             <Item style={{ marginTop: '-14px', marginLeft: '-30px', boxShadow: 'none' }}>
                                 <img src={post[0]?.imageUrl} alt=""
