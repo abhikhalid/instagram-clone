@@ -1,0 +1,8 @@
+Technology used in this build
+
+1. HTML/CSS
+2. MATERIAL UI
+3. Firebase for authentication, database, storage
+
+
+Hosting URL: https://instagram-clone-2-32cc3.web.app
