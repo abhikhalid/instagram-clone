@@ -52,6 +52,25 @@ const Stories = () => {
             })
             )))
 
+        db.collection('stories').onSnapshot(snapshot => (
+
+            setStories(snapshot.docs.filter(doc => {
+                const timestampDate = doc.data().timestamp.toDate().toString().split(" ");
+                const date = timestampDate[2];
+                const year = timestampDate[3];
+
+                return (date == new Date().getDate() && year == new Date().getUTCFullYear())
+
+            }).map(doc => {
+                return {
+                    id: doc.id,
+                    story: doc.data(),
+                }
+            }))
+
+
+        ))
+
 
     }, [])
 
