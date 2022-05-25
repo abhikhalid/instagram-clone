@@ -1,0 +1,45 @@
+.widgets{
+    display: flex;
+    flex-direction: column;
+    flex: 0.30;
+    padding-top: 40px;
+    position: sticky;
+    top:0;
+    
+}
+
+.widgets__header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.widgets__headerMiddle{
+   margin-left: -50px;
+}
+
+.widgets__suggestion{
+    display: flex;
+    justify-content: space-around;
+    /* margin-left: 45px; */
+    margin-top: 25px;
+    color: gray;
+    font-size: 12px;
+    
+}
+
+.widgets__suggestion > h4{
+    padding-left: 18px;
+}
+
+.widgets__footer{
+    margin-top: 20px;
+    color: lightgray;
+    font-size: 12px;
+    padding-left: 30px;
+}
+
+.widgets__line3{
+    margin-top: 20px;
+}
+

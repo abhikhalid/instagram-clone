@@ -1,0 +1,9 @@
+.story{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+    background-color: #FFFFFF;
+ 
+}
+

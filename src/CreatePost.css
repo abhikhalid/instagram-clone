@@ -1,0 +1,102 @@
+.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
+    position: fixed;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 86%) !important;
+    -webkit-tap-highlight-color: transparent;
+    z-index: -1;
+}
+
+.createPost{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 99998998755675676 !important;
+}
+
+.createPost__closeBtn{
+    position: absolute;
+    right: -960px;
+    top: -110px;
+    font-size: 35px !important;
+    z-index: 99999 !important;
+    color: white !important;
+}
+
+.createPost__containerHeader{
+    border-bottom: 1px solid lightgray;
+    margin-top: -40px;
+    padding-bottom: 10px;
+}
+
+.createPost__containerHeader > p{
+    text-align: center;
+    font-weight: 600;   
+}
+
+.createPost__containerBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+.createPost__containerBody  button{
+    background-color: #0095F6  !important;
+    color: white !important;
+    text-transform: inherit !important;
+    width: fit-content !important;
+    margin-top: 10px !important;
+    border-radius: 4px !important;
+    height: 4.3vh;
+}
+
+.createPost__photo1,.createPost__photo2{
+    font-size: 50px !important;
+    font-weight:100;
+  
+}
+
+.createPost__photo1{
+    transform: rotate(-10deg);
+}
+.createPost__photo2{
+    transform: rotate(10deg);
+    z-index: 100;
+    position: relative;
+    left: -10px;
+}
+
+.createPost__inputContainer{
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius:200px;
+}
+
+.createPost__inputContainer >input{
+    border:none;
+    outline-width: 0;
+    background-color: transparent;
+}
+
+.inputCaption::placeholder{
+    color: gray;
+}

@@ -1,0 +1,118 @@
+.post{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width: 100%;
+    box-shadow: 0px 5px 8px -9px rgba(0,0,0.75);
+}
+
+
+.post__header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.post__avatar{
+    border: 3px solid rgb(216, 66, 123);
+    
+}
+
+.post__title{
+    padding-left: 20px;
+    color : #262626;
+    font-size: 13px;
+}
+
+.post__middle{
+    flex: 1;
+}
+
+.post__image{
+    width: 100%;
+    object-fit: contain;
+}
+
+.post__button{
+    display: flex;
+    justify-content: space-between;
+}
+
+.post__button  .MuiSvgIcon-root{
+    color: black;
+    font-size: 96% !important;
+}
+
+.post__button  .MuiSvgIcon-root:hover{
+    color: gray;
+    
+}
+
+.post__description{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.post__descriptionName, .post__descriptionNumber{
+    font-weight: 700;
+}
+
+.post__descriptionName:hover{
+    text-decoration: underline;
+}
+
+.post__timestamp{
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: gray;
+}
+
+.post__footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid lightgray;
+}
+
+.post__footer > .MuiSvgIcon-root{
+    font-size: 190%;
+}
+
+.post__input{
+    flex: 1;
+    /* border: 1px solid yellow; */
+    margin-left: 10px;
+}
+
+.post__input > input{
+    width: 96%;
+    padding: 10px;
+    border: none;
+    outline-width: 0;
+
+}
+
+.active{
+    color: #0095F6 !important;
+}
+
+.post__comments{
+    /* display:flex; */
+    height: 50px;
+    overflow-y:scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.post__comments::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .post__comments {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }

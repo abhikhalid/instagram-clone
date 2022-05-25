@@ -1,0 +1,40 @@
+.chatList{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.chatList__header{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    padding: 15px;
+  
+}
+
+.chatList__userTitleHeader{
+    display: flex;
+}
+
+.chatList__header .MuiSvgIcon-root{
+    color: #262626;
+    font-weight: 700 !important;
+    font-size: 28px;
+}
+
+.chatList__header > .MuiSvgIcon-root{
+    position: absolute;
+    top: 1.0001;
+    right: 0;
+    padding-right: 10px;
+}
+
+.chatList__allChats{
+    flex: 1;
+    background-color: #FAFAFA;
+    /* overflow: scroll; */
+    overflow-y: scroll;
+
+}

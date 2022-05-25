@@ -1,0 +1,68 @@
+.profile{
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: red; */
+    height: 100vh;
+}
+
+.profile__top{
+    display: flex;
+    /* justify-content: space-between; */
+    
+    padding: 48px 120px;
+
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+}
+
+.profile__right{
+    display: flex;
+    flex-direction:column;
+    margin-left: 80px;
+}
+
+.profile__title{
+    display: flex; 
+    align-items: center;
+}
+
+.profile__title > *{
+    margin-right: 13px;
+}
+
+.profile__title > .MuiSvgIcon-root{
+    margin-left: 10px;
+    color: #020100 !important; 
+}
+
+.profile__title > button
+{
+    background-color: #FFFDF9;
+    color:  #000000;
+    text-transform: inherit !important;
+    width: fit-content;
+    height: 30px !important;
+    border: 1px solid lightgray;
+    outline: none;
+    
+}
+
+.profile__following{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile__following > p{
+    padding-right: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.profile__posts{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+}
+
+

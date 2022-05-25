@@ -1,0 +1,105 @@
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.ProfilePostDetailComment::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .ProfilePostDetailComment {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+.ProfilePostDetailComment__container{
+    width: 16.5vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+    
+    
+}
+
+.profilePostDetailComment__titleCaption{
+    display: flex;
+    align-items: center;
+    
+}
+
+.profilePostDetailComment__timestampComment
+{
+    display: flex;
+    margin-top: 10px;
+}
+
+.profilePostDetailComments{
+    display: flex;
+    flex-direction: column;
+    width: 130%;
+}
+
+.ProfilePostDetailComment__footer{
+    width: 120%;
+    height:90px;
+    margin-top: 7px;
+    /* background-color:red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    border-top: 1px solid lightgray;
+}
+
+
+
+.ProfilePostDetailComment__footer .MuiSvgIcon-root{
+    font-size: 28px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.ProfilePostDetailComment__footerLeft{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.profilePostDetailComment__footerIcon{
+    display: flex;
+}
+
+.profilePostDetailComment__footerLiked{
+    display: flex;
+    align-items: center;
+}
+
+.profilePostDetailComment__footerLiked > p{
+    margin-left: -9px;
+    padding-top: 8px;
+}
+
+.ProfilePostDetailComment__submit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:120%;
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+    /* padding:10px; */
+    padding-top: 10px;
+}
+
+.ProfilePostDetailComment__submit > input{
+    flex: 1;
+    border: 1px solid red;
+    padding: 10px;
+    border:none;
+    outline-width: 0;
+}
+
+.ProfilePostDetailComment__submit > button{
+   color: rgb(0, 149, 246);
+   font-weight: 550 !important;
+   font-size:14px !important;
+   text-transform: inherit !important;
+}

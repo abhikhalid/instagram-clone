@@ -1,0 +1,63 @@
+.viewStoryFooter{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    position: fixed;
+    bottom: 20px;
+    width: 80%;
+}
+
+.viewStoryFooter__input{
+    border-radius: 999px;
+    border: 2px solid white;
+    width: 145%;    
+
+    
+}
+
+.viewStoryFooter__input > input{
+    border: none;
+    outline-width: 0;
+    flex: 1;
+    background-color: transparent;
+    color: white;
+    padding: 15px;
+}
+
+.viewStoryFooter__right{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    color: white;
+    width: 10%;
+    
+}
+
+.viewStoryFooter__right  > .MuiSvgIcon-root{
+    /* color: rgb(255, 255, 255); */
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold !important;
+    padding-left: 10px;
+}
+
+.videoStoryFooter__sendIcon{
+    margin-top: -5px;
+    transform: rotate(-32deg);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    font-size:14px;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+    font-size:14px;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+    font-size:14px;
+  }

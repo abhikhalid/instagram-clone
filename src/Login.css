@@ -1,0 +1,150 @@
+.login{
+    max-width: 800px;
+    height: 83vh;
+    
+    /* background-color: red; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding-top: 50px;
+    /* justify-content: space-between; */
+}
+
+.login__left{
+   flex: .5;
+   /* background-color: orange; */
+   background-image: url('https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png');
+   background-position: center center;
+   background-repeat:no-repeat;
+   background-size: cover;
+   padding-right: 20px;
+   height: 87vh;
+   /* position: relative; */
+}
+
+.login__leftImageChanger{
+ 
+    /* border-radius: 10px; */
+    width: 335px;
+    height: 600px;
+    position: relative;
+    left: 124px;
+    top: 20px;
+    /* background-image: url('https://www.instagram.com/static/images/homepage/screenshots/screenshot3.png/94edb770accf.png'); */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+  
+    z-index: 100000;
+
+    transition:  all 0.7s ease-in-out 0.4s;
+    
+}
+
+.login__right{
+    flex: .5;
+    /* background-color: tomato; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    height: 100vh;
+}
+
+.login__inputContainer{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    padding: 50px;
+    border-radius: 2px;
+   
+
+}
+
+.login__logo{
+    height: 45px;
+    object-fit: contain;
+    padding-bottom: 10px;
+}
+
+
+.login__phoneNumberContainer{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+ }
+.login__passwordContainer{
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid lightgray;
+}
+
+.login__phoneNumberContainer > input{
+    border: none;
+    outline-width: 0;
+    background: transparent;
+    flex: 1;
+    
+}
+
+.login__passwordContainer > input{
+    border: none;
+    outline-width: 0;
+    background-color: transparent;
+}
+
+.login__inputContainer > button{
+    color: white;
+    background-color: rgb(0, 149, 246);
+    height: 5vh;
+    margin: 10px;
+}
+
+.login__loginWithGoogle{
+    display: flex;
+}
+
+.login__loginWithGoogle >p{
+    color: #000;
+}
+
+.login__donthaveAccountContainer{
+    margin-top: 15px;
+    color: #000;
+
+}
+
+.signUp{
+    color: rgb(0, 149, 246);
+    font-weight: 500;
+
+}
+
+.loginImageButtonContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.login__phoneNumberContainer> input::placeholder{
+    color: gray;
+}
+
+
+.login__passwordContainer > input::placeholder{
+    color: gray;
+}
+
+.login__loginWithGoogle > p{
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+}
+
+.login__donthaveAccountContainer{
+
+    border: 1px solid lightgray;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 4px;
+    
+}

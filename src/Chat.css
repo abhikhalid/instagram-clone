@@ -1,0 +1,39 @@
+.chat{
+
+    background-color: #FAFAFA;
+    margin: 10px 0;
+}
+
+.chat__header{
+    display: flex;
+    align-items: center;
+    
+    /* justify-content: center; */
+}
+
+.chat__headerRight{
+    min-width: 20vw;
+    margin-left: 20px;
+    
+}
+
+.chat:hover{
+    background-color: #EFEFEF;
+}
+
+.chat__headerLeft{
+    position: relative;
+}
+
+.chat__activeBall{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #78DE45;
+    border: 3px solid #FFFFFF;
+    position: absolute;
+    left: 50px;
+    top: 33px;
+    bottom: 0;
+
+}

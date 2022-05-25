@@ -1,0 +1,37 @@
+.flash{
+    background-color: #fdfdfd;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+}
+
+.flash__container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 240px;
+}
+
+.flashLogo{
+   height: 70px;
+   object-fit: contain;
+}
+
+.flash__containerFooter{
+    text-align: center;
+    margin-top: 40vh;
+
+}
+
+.flash__containerFooter >p {
+    text-align: center;
+    color: rgb(150, 150, 150);
+    font-weight: 600;
+    font-size: 14px;
+
+}
+
+.flashFooterLogo{
+    height: 40px;
+    object-fit: contain;
+}
