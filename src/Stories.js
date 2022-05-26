@@ -11,6 +11,8 @@ import { useStateValue } from './StateProvider';
 import { storage } from './firebase';
 
 
+import StoryUploader from './StoryUploader';
+
 
 
 const Stories = () => {
@@ -22,6 +24,8 @@ const Stories = () => {
     const hiddenFileInput = React.useRef(null);
 
     const [image, setImage] = useState(null);
+
+
 
     useEffect(() => {
 
@@ -71,6 +75,8 @@ const Stories = () => {
 
         ))
 
+        setImage(null);
+
 
     }, [])
 
@@ -81,9 +87,6 @@ const Stories = () => {
 
         }
 
-        setTimeout(() => {
-            console.log(image?.name);
-        }, 2000);
 
 
     };
@@ -101,33 +104,34 @@ const Stories = () => {
 
 
 
-
-
-
     return (
-        <div className="stories">
+        <>
+            <div className="stories">
 
 
 
-            <Story src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa85IJEAk0J5Hu-Z1oADHXnxxDLouEgEetYA&usqp=CAU" addStory storyUploadHandler={storyUploadHandler} />
+                <Story src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa85IJEAk0J5Hu-Z1oADHXnxxDLouEgEetYA&usqp=CAU" addStory storyUploadHandler={storyUploadHandler} />
 
 
-            <input
-                type="file"
-                ref={hiddenFileInput}
-                onChange={handleChange}
-                style={{ display: 'none' }}
-            />
+                <input
+                    type="file"
+                    ref={hiddenFileInput}
+                    onChange={handleChange}
+                    style={{ display: 'none' }}
+                />
 
 
-            {
-                stories.length > 0 && (stories.map(story => <Story key={story.id} story={story.story} />))
-            }
+                {
+                    stories.length > 0 && (stories.map(story => <Story key={story.id} story={story.story} />))
+                }
 
 
 
 
-        </div>
+            </div>
+
+            {image && <StoryUploader image={image} setImage={setImage}/>}
+        </>
     );
 };
 
